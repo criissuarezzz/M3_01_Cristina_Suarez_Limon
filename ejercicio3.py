@@ -10,7 +10,7 @@ class producto():
         print("Se ha creado el producto con éxito")
     
     def __str__(self):
-        return("El producto con nombre {} y código {}, vale {}€ y pertenece a la sección de {}".format(self.nombre, self.codigo, self.precio, self.tipo))
+        print("El producto con nombre {} y código {}, vale {}€ y pertenece a la sección de {}.".format(self.nombre, self.codigo, self.precio, self.tipo))
 
 producto1=producto(8480000860293, "Pulpis Mix", 1.10, "golosinas")
 producto2=producto(8480000225566, "Acondicionador instantáneo", 2.00, "Cuidado del cabello")
