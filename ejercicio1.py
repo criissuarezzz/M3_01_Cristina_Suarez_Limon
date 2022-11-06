@@ -1,7 +1,7 @@
 from ast import main
 class alumno(): #Creamos la clase alumno
 
-    def __init__(self, nombre, nota):     #
+    def __init__(self, nombre, nota):     #construir la clase
         self.nombre = nombre # Definimos que el atributo nombre, sera el nombre asignado
         self.nota = nota # Definimos que el atributo nota, sera la nota asignada
         print("Se ha creado con éxito el alumno")
