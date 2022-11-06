@@ -8,19 +8,25 @@ class alumno(): #Creamos la clase alumno
 
     def calificacion(self):
         if int(self.nota) < 5:
-            print("Ha suspendido {} con un {}".format(self.nombre, self.nota))
+            print("Ha suspendido")
         else :
-            print("Ha aprobado {} con un {}".format(self.nombre, self.nota))
+            print("Ha aprobado")
         return
+    
+    def __str__(self): 
+        return("{} ha sacado un {}".format(self.nombre, self.nota)) 
 
-alumno1 = alumno("Valentina", 9.8) #Instancia
+
+alumno1 = alumno("Valentina", 9.8) 
 alumno2 = alumno("María", 4)
 alumno3 = alumno("Óscar", 10)
 
 #Llamamos al método
-alumno1.calificacion()
-alumno2.calificacion()
-alumno3.calificacion()
+
+print(str(alumno1))
+print(str(alumno2))
+print(str(alumno3))
+
 
 if __name__=="__main__":
     main()
